@@ -3,10 +3,8 @@ using System.Collections;
 
 public class bulletMovement : MonoBehaviour {
 	public float bulletSpeed = 5;
-	private int collisionCount;
 	// Use this for initialization
 	void Start () {
-		collisionCount = 0;
 	}
 	
 	// Update is called once per frame
@@ -19,10 +17,9 @@ public class bulletMovement : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.name != "Player") {
-			print ("Bullet Collided with: " + col.gameObject.name);
-			collisionCount++;
-			print ("Number of collisions with Bullet: " + collisionCount);
-			Destroy (col.gameObject);
+			Destroy (gameObject);
+			//Envokes OnKill from interface
+			col.gameObject.GetComponent<EnemKillable>().OnHit();
 		}
 	}
 }
