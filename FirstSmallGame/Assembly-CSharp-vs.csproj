@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BrickBehavior.cs" />
+     <Compile Include="Assets\EnemyBehavior.cs" />
      <Compile Include="Assets\Interfaces.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\bulletMovement.cs" />
