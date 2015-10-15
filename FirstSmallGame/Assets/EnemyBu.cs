@@ -1,25 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class bulletMovement : MonoBehaviour {
-	public float bulletSpeed = 5f;
+public class EnemyBu : MonoBehaviour {
+	public float enemBulletSpeed = 0.5f; 
 	// Use this for initialization
 	void Start () {
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (0, bulletSpeed, 0);
-		if (transform.position.y > 50) {
+		transform.Translate (0, -enemBulletSpeed, 0);
+		if (transform.position.y < -50) {
 			DestroyObject (gameObject);
 		}
 	}
 
 	void OnTriggerEnter(Collider col) {
-		if (col.gameObject.name != "Player") {
-			Destroy (gameObject);
 			//Envokes OnKill from interface
+		if(col.gameObject.name == "Player") {
 			col.gameObject.GetComponent<EnemKillable>().OnHit();
+			Destroy (gameObject);
 		}
 	}
 }

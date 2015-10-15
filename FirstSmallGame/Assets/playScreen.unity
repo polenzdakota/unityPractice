@@ -1393,6 +1393,10 @@ Prefab:
       propertyPath: range
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11462936, guid: adacaf9823059444598b7970732ca694, type: 2}
+      propertyPath: frequency
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adacaf9823059444598b7970732ca694, type: 2}
   m_IsPrefabParent: 0

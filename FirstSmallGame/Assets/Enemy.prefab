@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3cb10e536226ed428f81418fe35c6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemBullet: {fileID: 0}
+  EnemBullet: {fileID: 167572, guid: 2fd5d76b06633c1459c96f597aae2dcc, type: 2}
   enemHP: 15
   range: 10
   enemSpeed: .699999988
@@ -121,6 +121,10 @@ Prefab:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: EnemBullet
+      value: 
+      objectReference: {fileID: 167572, guid: 2fd5d76b06633c1459c96f597aae2dcc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102068}

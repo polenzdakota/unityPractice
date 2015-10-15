@@ -22,7 +22,6 @@ public class EnemyBehavior : MonoBehaviour, EnemKillable {
 	// Update is called once per frame
 	void Update () {
 		timedFire = Time.time - startTime - prevTime;
-		print (timedFire);
 		if (timedFire > frequency) {
 			FireBullet();
 			prevTime = Time.time;
@@ -41,7 +40,7 @@ public class EnemyBehavior : MonoBehaviour, EnemKillable {
 
 	public void FireBullet() {
 		print ("fire");
-		//Instantiate (EnemBullet, transform.position, transform.rotation);
+		Instantiate (EnemBullet, transform.position, transform.rotation);
 	}
 
 	public void MoveBackAndForth(float speed) {

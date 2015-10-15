@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: a3cb10e536226ed428f81418fe35c6d9
-timeCreated: 1444867040
+guid: b068ba1e15b989443be1a975f5a4e077
+timeCreated: 1444865586
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - EnemBullet: {fileID: 167572, guid: 2fd5d76b06633c1459c96f597aae2dcc, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

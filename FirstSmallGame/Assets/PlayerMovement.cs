@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour, EnemKillable {
 	public GameObject bullet;
 	public float speed = 6f;
 	public int playerHP = 10;
@@ -33,6 +33,14 @@ public class PlayerMovement : MonoBehaviour {
 		return ((transform.position.x <= range && transform.position.x >= -range) ||
 			(transform.position.x > range && movement_X < 0) ||
 			(transform.position.x < -range && movement_X > 0));
+	}
+
+	public void OnHit() {
+		playerHP--;
+		print (playerHP);
+		if (playerHP < 1) {
+			print("Dead!");
+		}
 	}
 
 	void OnTriggerEnter(Collider col) {
