@@ -105,6 +105,8 @@ MonoBehaviour:
   speed: 1
   playerHP: 10
   range: 25
+  HPCounter: {fileID: 0}
+  LoseText: {fileID: 100916, guid: a839c7d0d515844408d47b2b4d4acb96, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -132,6 +134,10 @@ Prefab:
       propertyPath: range
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: LoseText
+      value: 
+      objectReference: {fileID: 100916, guid: a839c7d0d515844408d47b2b4d4acb96, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172288}

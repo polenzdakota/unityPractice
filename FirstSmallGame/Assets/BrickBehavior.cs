@@ -21,7 +21,6 @@ public class BrickBehavior : MonoBehaviour, EnemKillable {
 	/// </summary>
 	public void OnHit() {
 		brickHP--;
-		print (brickHP);
 		if (brickHP < 1) {
 			Destroy (gameObject);
 		}

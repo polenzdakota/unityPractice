@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour, EnemKillable {
 	public float speed = 6f;
 	public int playerHP = 10;
 	public float range = 10f;
+	public GameObject LoseText;
 
 	// Use this for initialization
 	void Start () {
@@ -39,13 +40,9 @@ public class PlayerMovement : MonoBehaviour, EnemKillable {
 		playerHP--;
 		print (playerHP);
 		if (playerHP < 1) {
-			print("Dead!");
+			Destroy(gameObject);
+			Instantiate(LoseText);
 		}
 	}
 
-	void OnTriggerEnter(Collider col) {
-		if (col.gameObject.name != "bullet(Clone)") {
-			playerHP--;
-		}
-	}
 }

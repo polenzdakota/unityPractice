@@ -1,14 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\EnemyBu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerMovement.cs">
     <Files>
-      <File FileName="Assets\EnemyBehavior.cs" Line="1" Column="1" />
-      <File FileName="FirstSmallGame.sln" Line="1" Column="1" />
-      <File FileName="Assets\PlayerMovement.cs" Line="24" Column="44" />
-      <File FileName="Assets\BrickBehavior.cs" Line="4" Column="59" />
-      <File FileName="Assets\bulletMovement.cs" Line="22" Column="4" />
+      <File FileName="Assets\PlayerMovement.cs" Line="8" Column="27" />
+      <File FileName="Assets\EnemyBehavior.cs" Line="13" Column="32" />
+      <File FileName="Assets\BrickBehavior.cs" Line="23" Column="13" />
+      <File FileName="Assets\bulletMovement.cs" Line="1" Column="1" />
       <File FileName="Assets\Interfaces.cs" Line="1" Column="1" />
-      <File FileName="Assets\EnemyBu.cs" Line="5" Column="36" />
+      <File FileName="Assets\EnemyBu.cs" Line="1" Column="1" />
+      <File FileName="Assets\EnemHPControler.cs" Line="21" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -94,6 +94,7 @@ MonoBehaviour:
   range: 10
   enemSpeed: .699999988
   frequency: 2
+  WinText: {fileID: 133668, guid: 69e80a0c8d323fe4482c2af244f55944, type: 2}
 --- !u!135 &13582896
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -125,6 +126,14 @@ Prefab:
       propertyPath: EnemBullet
       value: 
       objectReference: {fileID: 167572, guid: 2fd5d76b06633c1459c96f597aae2dcc, type: 2}
+    - target: {fileID: 0}
+      propertyPath: EnemHpBar
+      value: 
+      objectReference: {fileID: 112576, guid: 746ad278819a2544d8a3444cf6dc3267, type: 2}
+    - target: {fileID: 0}
+      propertyPath: WinText
+      value: 
+      objectReference: {fileID: 133668, guid: 69e80a0c8d323fe4482c2af244f55944, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102068}

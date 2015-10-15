@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyBehavior : MonoBehaviour, EnemKillable {
 	public GameObject EnemBullet;
-	public int enemHP = 15;
+	public int enemHP = 10;
 	public int range = 10;
 	public float enemSpeed = 0.5f;
 	private float initialX;
@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour, EnemKillable {
 	private float timedFire;
 	private float startTime;
 	private float prevTime = 0.0f;
+	public GameObject WinText;
 
 	// Use this for initialization
 	void Start () {
@@ -32,14 +33,13 @@ public class EnemyBehavior : MonoBehaviour, EnemKillable {
 
 	public void OnHit() {
 		enemHP--;
-		print (enemHP);
 		if (enemHP < 1) {
 			Destroy (gameObject);
+			Instantiate(WinText);
 		}
 	}
 
 	public void FireBullet() {
-		print ("fire");
 		Instantiate (EnemBullet, transform.position, transform.rotation);
 	}
 
